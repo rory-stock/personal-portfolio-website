@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
-
-const props = defineProps({
+defineProps({
   text: String,
   length: Number,
 });
@@ -14,8 +12,8 @@ const props = defineProps({
     <div
       class="whitespace-nowrap overflow-hidden inline-block animate-scroll-right-to-left text-white"
     >
-      <div v-for="i in props.length" :key="i" class="inline-block">
-        <p class="inline-block">{{ props.text }}</p>
+      <div v-for="i in length" :key="i" class="inline-block">
+        <p class="inline-block">{{ text }}</p>
         <span class="w-4 inline-block bg-black"></span>
         <p class="inline-block">//</p>
         <span class="w-4 inline-block bg-black"></span>

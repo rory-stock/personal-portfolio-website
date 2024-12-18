@@ -14,20 +14,6 @@ const route = useRoute();
           >Home</NuxtLink
         >
       </li>
-      <!--      <li>-->
-      <!--        <NuxtLink-->
-      <!--          to="/personal"-->
-      <!--          :class="route.name === 'personal' ? 'text-blue-499' : 'text-gray-500'"-->
-      <!--          >Personal</NuxtLink-->
-      <!--        >-->
-      <!--      </li>-->
-      <!--      <li>-->
-      <!--        <NuxtLink-->
-      <!--          to="/projects"-->
-      <!--          :class="route.name === 'projects' ? 'text-blue-499' : 'text-gray-500'"-->
-      <!--          >Projects</NuxtLink-->
-      <!--        >-->
-      <!--      </li>-->
       <li>
         <NuxtLink
           to="/events"

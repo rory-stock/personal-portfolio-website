@@ -9,6 +9,14 @@ watch(
     isOpen.value = false;
   },
 );
+
+watchEffect(() => {
+  if (isOpen.value) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+});
 </script>
 
 <template>
