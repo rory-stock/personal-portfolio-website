@@ -26,11 +26,11 @@ const props = defineProps({
         class="flex flex-row items-center align-middle pb-1 md:pb-0 justify-between select-none"
       >
         <h1
-          class="font-neue-haas-grotesk-display text-5xl md:text-7xl font-semibold pl-2"
+          class="font-neue-haas-grotesk-display text-4xl md:text-5xl lg:text-7xl font-semibold pl-2"
         >
           Rory Stock
         </h1>
-        <!--        <MobileNav client:only="react"/>-->
+        <MobileNav />
         <DesktopNav />
       </div>
 

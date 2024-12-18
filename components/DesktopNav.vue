@@ -5,7 +5,7 @@ const route = useRoute();
 <template>
   <nav>
     <ul
-      class="hidden lg:inline-flex gap-4 font-neue-haas-grotesk-text font-semibold text-xl items-center pr-6"
+      class="hidden md:inline-flex gap-4 font-neue-haas-grotesk-text font-semibold md:text-xl lg:text-2xl items-center pr-6"
     >
       <li>
         <NuxtLink
@@ -14,20 +14,20 @@ const route = useRoute();
           >Home</NuxtLink
         >
       </li>
-      <li>
-        <NuxtLink
-          to="/personal"
-          :class="route.name === 'personal' ? 'text-blue-499' : 'text-gray-500'"
-          >Personal</NuxtLink
-        >
-      </li>
-      <li>
-        <NuxtLink
-          to="/projects"
-          :class="route.name === 'projects' ? 'text-blue-499' : 'text-gray-500'"
-          >Projects</NuxtLink
-        >
-      </li>
+      <!--      <li>-->
+      <!--        <NuxtLink-->
+      <!--          to="/personal"-->
+      <!--          :class="route.name === 'personal' ? 'text-blue-499' : 'text-gray-500'"-->
+      <!--          >Personal</NuxtLink-->
+      <!--        >-->
+      <!--      </li>-->
+      <!--      <li>-->
+      <!--        <NuxtLink-->
+      <!--          to="/projects"-->
+      <!--          :class="route.name === 'projects' ? 'text-blue-499' : 'text-gray-500'"-->
+      <!--          >Projects</NuxtLink-->
+      <!--        >-->
+      <!--      </li>-->
       <li>
         <NuxtLink
           to="/events"
