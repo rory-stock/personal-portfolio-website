@@ -14,7 +14,6 @@
         <p>© Rory Stock 2024</p>
         <br />
         <p>Nelson // New Zealand</p>
-        <DigitalTime />
         <br />
         <p class="inline-flex">
           Instagram:&nbsp;
@@ -40,6 +39,7 @@
         </p>
         <p>Email: contact@rorystock.com</p>
         <br />
+        <DigitalTime />
       </div>
     </div>
   </footer>
