@@ -22,6 +22,7 @@ useHead({
   },
   htmlAttrs: {
     class: "bg-black",
+    lang: "en",
   },
 });
 </script>
