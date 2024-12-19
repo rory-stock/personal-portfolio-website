@@ -23,10 +23,15 @@ useHead({
         class="font-georgia text-black selection:text-blue-499 text-xl md:text-3xl lg:text-4xl font-normal"
       >
         Whether you’re looking to collaborate or just want to chat, send me a
-        message through the form below.
+        message at
+        <NuxtLink
+          to="mailto:contact@rorystock.com"
+          target="_blank"
+          class="underline hover:text-blue-499"
+          >contact@rorystock.com</NuxtLink
+        >
       </p>
     </div>
-    <ContactForm />
   </div>
 </template>
 

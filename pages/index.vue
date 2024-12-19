@@ -57,7 +57,7 @@ const images = [
 
 <template>
   <div
-    class="flex flex-col gap-4 items-center md:items md:grid md:grid-cols-3 md:gap-6 md:pl-4 md:pr-4 pt-4 pb-4"
+    class="flex flex-col gap-4 items-center md:items md:grid md:grid-cols-3 md:gap-6 pl-4 pr-4 pt-4 pb-4"
   >
     <div v-for="image in images" :key="image.src">
       <NuxtPicture
