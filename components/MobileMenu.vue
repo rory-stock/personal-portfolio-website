@@ -17,24 +17,21 @@ const route = useRoute();
         "
       >
         <div
-          class="gap-4 items-center justify-center h-full"
+          class="gap-4 items-center justify-center text-3xl font-bold h-full"
           :class="isOpen ? 'animate-menu-item-fade flex flex-col' : 'hidden'"
         >
           <NuxtLink
             to="/"
-            class="text-3xl font-bold"
             :class="route.name === 'index' ? 'text-blue-499' : 'text-white'"
             >Home</NuxtLink
           >
           <NuxtLink
             to="/events"
-            class="text-3xl font-bold"
             :class="route.name === 'events' ? 'text-blue-499' : 'text-white'"
             >Events</NuxtLink
           >
           <NuxtLink
             to="/contact"
-            class="text-3xl font-bold"
             :class="route.name === 'contact' ? 'text-blue-499' : 'text-white'"
             >Contact</NuxtLink
           >
