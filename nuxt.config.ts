@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    formats: ["webp", "jpeg"],
+    quality: 1,
+  },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
