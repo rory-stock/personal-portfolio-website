@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="pb-4">
     <div class="flex xl:items-center pt-4 pl-3 md:pl-6">
       <p
         class="font-georgia text-black selection:text-blue-499 text-xl md:text-3xl lg:text-4xl font-normal pr-1"
