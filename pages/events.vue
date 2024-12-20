@@ -5,49 +5,49 @@ const events = [
     location: "Cable Bay Adventure Park",
     date: "December 14 - 15",
     url: "https://drive.google.com/drive/folders/1-l__vXPYAsgy6XWyqU10YuBj-2TGTWK-",
-    coverImage: "/images/events/R5RS7535.jpg",
+    coverImage: "/R5RS7535.jpg",
   },
   {
     title: "2024 Codgers Kids Enduro",
     location: "Koata Park",
     date: "October 19",
     url: "https://drive.google.com/drive/folders/1sGzvAzK25DWmg07eiC4aQigIrnu0jgMn",
-    coverImage: "/images/events/R5RS2243.jpg",
+    coverImage: "/R5RS2243.jpg",
   },
   {
     title: "2024 Broken Axe DH",
     location: "Waitarake (Sharlands)",
     date: "Sebtember 29",
     url: "https://drive.google.com/drive/folders/1ziCONk0tXcDflEy_isSNqRrl5ExKkp6J",
-    coverImage: "/images/events/R5RS0585.jpg",
+    coverImage: "/R5RS0585.jpg",
   },
   {
     title: "2024 Midwinter Gorge Enduro",
     location: "Wairoa Gorge",
     date: "June 29",
     url: "https://drive.google.com/drive/folders/1QboN8bNWIamXMn6GMDatkMi73pJD7Slf",
-    coverImage: "/images/events/R5RS1675.jpg",
+    coverImage: "/R5RS1675.jpg",
   },
   {
     title: "2024 Gravity Junior Enduro",
     location: "Koata Park",
     date: "May 26",
     url: "https://drive.google.com/drive/folders/18d3Uv77XhR3Dr51-hac-8Nk8_JSxl8us",
-    coverImage: "/images/events/R5RS9284.jpg",
+    coverImage: "/R5RS9284.jpg",
   },
   {
     title: "2024 Mammoth Enduro",
     location: "Nelson",
     date: "March 23 - 24",
     url: "https://drive.google.com/drive/folders/1cIqTphnBZZaIxAeQaIHQQZ1QeERhcprF",
-    coverImage: "/images/events/0I0A2280.jpg",
+    coverImage: "/0I0A2280.jpg",
   },
   {
     title: "2024 Cable Bay Enduro",
     location: "Cable Bay Adventure Park",
     date: "March 1 - 3",
     url: "https://drive.google.com/drive/folders/1dkZcDASg2Pu7vy4tAF8ePtcIHLMbJtUM",
-    coverImage: "/images/events/P1027141.jpg",
+    coverImage: "/P1027141.jpg",
   },
 ];
 </script>
@@ -98,6 +98,10 @@ const events = [
             :alt="event.title"
             class="w-full h-96 object-cover"
             loading="lazy"
+            decoding="async"
+            format="webp"
+            legacyFormat="jpeg"
+            provider="cloudfare"
           />
         </NuxtLink>
       </div>

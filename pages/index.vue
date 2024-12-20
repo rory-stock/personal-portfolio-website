@@ -5,51 +5,51 @@ useHead({
 
 const images = [
   {
-    src: "/images/home/R5RS0282.jpg",
+    src: "/R5RS0282.jpg",
     alt: "Close up portrait of mountain biker",
   },
   {
-    src: "/images/home/R5RS9085.jpg",
+    src: "/R5RS9085.jpg",
     alt: "Silhouette portrait of mountain biker in fog",
   },
   {
-    src: "/images/home/0I0A3820.jpg",
+    src: "/0I0A3820.jpg",
     alt: "Mountain biker doing a jump",
   },
   {
-    src: "/images/home/R5RS8604.jpg",
+    src: "/R5RS8604.jpg",
     alt: "Person digging bike track with slow shutter speed",
   },
   {
-    src: "/images/home/R5RS9058.jpg",
+    src: "/R5RS9058.jpg",
     alt: "Mountain biker walking up hill with slow shutter speed",
   },
   {
-    src: "/images/home/R5RS4616.jpg",
+    src: "/R5RS4616.jpg",
     alt: "Close up portrait of mountain biker using a slow shutter speed",
   },
   {
-    src: "/images/home/R5RS4298.jpg",
+    src: "/R5RS4298.jpg",
     alt: "Mountain biker going off a jump",
   },
   {
-    src: "/images/home/R5RS4522.jpg",
+    src: "/R5RS4522.jpg",
     alt: "Mountain biker going round a berm",
   },
   {
-    src: "/images/home/R5RS4625.jpg",
+    src: "/R5RS4625.jpg",
     alt: "Mountain biker walking back up a trail",
   },
   {
-    src: "/images/home/R5RS8774.jpg",
+    src: "/R5RS8774.jpg",
     alt: "Person digging bike track with slow shutter speed",
   },
   {
-    src: "/images/home/R5RS9106.jpg",
+    src: "/R5RS9106.jpg",
     alt: "Mountain biker going round a berm",
   },
   {
-    src: "/images/home/R5RS8895.jpg",
+    src: "/R5RS8895.jpg",
     alt: "Mountain biker going round a berm",
   },
 ];
@@ -65,6 +65,10 @@ const images = [
         :alt="image.alt"
         loading="lazy"
         class="w-auto"
+        decoding="async"
+        format="webp"
+        legacyFormat="jpeg"
+        provider="cloudflare"
       />
     </div>
   </div>
