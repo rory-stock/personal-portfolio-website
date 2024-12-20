@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.",
+            "Rory Stock is a New Zealand based sports and commercial photographer specialising in mountain biking and other adventure activities.",
         },
         {
           name: "keywords",
@@ -52,7 +52,11 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.",
+            "Rory Stock is a New Zealand based sports and commercial photographer specialising in mountain biking and other adventure activities.",
+        },
+        {
+          property: "og:image",
+          content: "https://rorystock.imgix.net/home/R5RS9085.jpg?auto=format,compress&fm=webp",
         },
 
         // Twitter
@@ -65,8 +69,12 @@ export default defineNuxtConfig({
         {
           property: "twitter:description",
           content:
-            "Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.",
+            "Rory Stock is a New Zealand based sports and commercial photographer specialising in mountain biking and other adventure activities.",
         },
+        {
+            property: "twitter:image",
+            content: "https://rorystock.imgix.net/home/R5RS9085.jpg?auto=format,compress&fm=webp",
+        }
       ],
 
       link: [
