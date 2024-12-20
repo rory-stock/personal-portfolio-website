@@ -99,8 +99,6 @@ const events = [
             class="w-full h-96 object-cover"
             loading="lazy"
             decoding="async"
-            format="webp"
-            legacyFormat="jpeg"
           />
         </NuxtLink>
       </div>

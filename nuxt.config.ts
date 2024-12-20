@@ -12,9 +12,10 @@ export default defineNuxtConfig({
   },
 
   image: {
+    formats: ["webp", "avif"],
     provider: "cloudflare",
     cloudflare: {
-        baseURL: "https://www.rorystock.dev",
+        baseURL: "https://www.rorystock.dev/",
     }
   },
 
