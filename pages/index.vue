@@ -63,7 +63,6 @@ const images = [
       <NuxtPicture
         :src="image.src"
         :alt="image.alt"
-        loading="lazy"
         class="w-auto"
         decoding="async"
         :modifiers="{ auto: 'format,compress' }"

@@ -97,7 +97,6 @@ const events = [
             :src="event.coverImage"
             :alt="event.title"
             class="w-full h-96 object-cover"
-            loading="lazy"
             decoding="async"
             :modifiers="{ auto: 'format,compress' }"
           />
