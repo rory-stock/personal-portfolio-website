@@ -66,6 +66,7 @@ const images = [
         loading="lazy"
         class="w-auto"
         decoding="async"
+        :modifiers="{ auto: 'format,compress' }"
       />
     </div>
   </div>
