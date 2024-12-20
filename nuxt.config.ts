@@ -56,7 +56,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://rorystock.imgix.net/home/R5RS9085.jpg?auto=format,compress&fm=webp",
+          content: "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
         },
 
         // Twitter
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
         },
         {
             property: "twitter:image",
-            content: "https://rorystock.imgix.net/home/R5RS9085.jpg?auto=format,compress&fm=webp",
+            content: "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
         }
       ],
 
