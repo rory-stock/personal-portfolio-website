@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: "cloudflare",
     cloudflare: {
         baseURL: "https://www.rorystock.dev",
     }

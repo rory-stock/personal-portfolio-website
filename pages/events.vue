@@ -101,7 +101,6 @@ const events = [
             decoding="async"
             format="webp"
             legacyFormat="jpeg"
-            provider="cloudfare"
           />
         </NuxtLink>
       </div>

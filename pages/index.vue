@@ -68,7 +68,6 @@ const images = [
         decoding="async"
         format="webp"
         legacyFormat="jpeg"
-        provider="cloudflare"
       />
     </div>
   </div>
