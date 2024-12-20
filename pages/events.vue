@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: "Events",
+});
+
 const events = [
   {
     title: "2024 Gritt Camp",
