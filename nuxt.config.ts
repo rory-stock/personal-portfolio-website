@@ -14,8 +14,8 @@ export default defineNuxtConfig({
   image: {
     provider: "imgix",
     imgix: {
-        baseURL: "https://rorystock.imgix.net",
-    }
+      baseURL: "https://rorystock.imgix.net",
+    },
   },
 
   app: {
@@ -56,7 +56,8 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
+          content:
+            "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
         },
 
         // Twitter
@@ -72,9 +73,10 @@ export default defineNuxtConfig({
             "Rory Stock is a New Zealand based sports and commercial photographer specialising in mountain biking and other adventure activities.",
         },
         {
-            property: "twitter:image",
-            content: "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
-        }
+          property: "twitter:image",
+          content:
+            "https://rorystock.imgix.net/meta/R5RS9085.jpg?auto=format,compress&fm=webp",
+        },
       ],
 
       link: [
@@ -105,5 +107,16 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@sentry/nuxt/module"],
+
+  sentry: {
+    sourceMapsUploadOptions: {
+      org: "rory-stock",
+      project: "personal-portfolio",
+    },
+  },
+
+  sourcemap: {
+    client: "hidden",
+  },
 });
