@@ -93,6 +93,9 @@ export default defineNuxtConfig({
       ],
 
       link: [
+        // Fonts
+        { rel: "stylesheet", href: "https://use.typekit.net/nqc5atv.css" },
+
         // Favicon
         { rel: "icon", href: "/favicons/favicon.svg", type: "image/svg+xml" },
         {
