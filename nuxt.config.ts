@@ -18,6 +18,19 @@ export default defineNuxtConfig({
     },
   },
 
+  site: {
+    url: "https://www.rorystock.com",
+    name: "Rory Stock - New Zealand Based Photographer",
+  },
+
+  sitemap: {
+    autoLastmod: true,
+    xslTips: false,
+    xslColumns: [
+      { label: "URL", width: "50%" },
+    ],
+  },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -107,7 +120,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "@sentry/nuxt/module"],
+  modules: ["@nuxt/image", "@sentry/nuxt/module", "@nuxtjs/sitemap"],
 
   sentry: {
     sourceMapsUploadOptions: {
