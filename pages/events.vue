@@ -5,6 +5,13 @@ useHead({
 
 const events = [
   {
+    title: "2025 Cable Bay Junior Enduro",
+    location: "Cable Bay Adventure Park",
+    date: "February 1",
+    url: "https://drive.google.com/drive/folders/172kipqxUfvIngl1iKfmn5wGXy--eBlDH?usp=sharing",
+    coverImage: "/events/R5RS3573.jpg",
+  },
+  {
     title: "2024 Gritt Camp",
     location: "Cable Bay Adventure Park",
     date: "December 14 - 15",
