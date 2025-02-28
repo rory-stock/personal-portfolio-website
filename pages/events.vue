@@ -5,6 +5,13 @@ useHead({
 
 const events = [
   {
+    title: "2025 Cable Bay Enduro",
+    location: "Cable Bay Adventure Park",
+    date: "February 28 - March 2",
+    url: "https://drive.google.com/drive/folders/1AFsyxNwcZJrnd7hsa5uIHhEMkF3PRaK9?usp=sharing",
+    coverImage: "/events/R5RS8016.jpg",
+  },
+  {
     title: "2025 Cable Bay Junior Enduro",
     location: "Cable Bay Adventure Park",
     date: "February 1",
