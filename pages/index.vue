@@ -21,6 +21,14 @@ const images = [
     alt: "Close up portrait of mountain biker",
   },
   {
+    src: "/home/R5RS0751.jpg",
+    alt: "Mountain biker doing a jump",
+  },
+  {
+    src: "/home/R5RS0565.jpg",
+    alt: "Mountain biker doing a jump",
+  },
+  {
     src: "/home/R5RS8604.jpg",
     alt: "Person digging bike track with slow shutter speed",
   },
@@ -41,6 +49,10 @@ const images = [
     alt: "Mountain biker going off a jump",
   },
   {
+    src: "/home/R5RS7448.jpg",
+    alt: "Portrait of a person speaking at a mountain bike event",
+  },
+  {
     src: "/home/R5RS4522.jpg",
     alt: "Mountain biker going round a berm",
   },
@@ -57,11 +69,11 @@ const images = [
     alt: "Person digging bike track with slow shutter speed",
   },
   {
-    src: "/home/R5RS9106.jpg",
+    src: "/home/R5RS8895.jpg",
     alt: "Mountain biker going round a berm",
   },
   {
-    src: "/home/R5RS8895.jpg",
+    src: "/home/R5RS9106.jpg",
     alt: "Mountain biker going round a berm",
   },
 ];
