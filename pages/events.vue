@@ -5,6 +5,13 @@ useHead({
 
 const events = [
   {
+    title: "2025 NZ MTB Rally",
+    location: "Nelson and Tasman",
+    date: "March 22 - 28",
+    url: "https://drive.google.com/drive/folders/1Br8y_ljztNp0DDGWYlZVI3UNFkQTs2Xm?usp=drive_link",
+    coverImage: "/events/R5RS4767.jpg",
+  },
+  {
     title: "2025 Cable Bay Enduro",
     location: "Cable Bay Adventure Park",
     date: "February 28 - March 2",
