@@ -42,7 +42,7 @@ const events = [
   {
     title: "2024 Broken Axe DH",
     location: "Waitarake (Sharlands)",
-    date: "Sebtember 29",
+    date: "September 29",
     url: "https://drive.google.com/drive/folders/1ziCONk0tXcDflEy_isSNqRrl5ExKkp6J",
     coverImage: "/events/R5RS0585.jpg",
   },
