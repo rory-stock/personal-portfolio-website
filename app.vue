@@ -3,9 +3,7 @@
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
-      <div>
-        <div class="hello"></div>
-      </div>
+      <div></div>
     </NuxtLayout>
   </div>
 </template>
