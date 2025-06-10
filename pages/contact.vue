@@ -27,7 +27,7 @@ useHead({
         <NuxtLink
           to="mailto:contact@rorystock.com"
           target="_blank"
-          class="underline hover:text-blue-499"
+          class="underline hover:text-blue-499 transition-colors duration-100"
           >contact@rorystock.com</NuxtLink
         >
       </p>

@@ -10,21 +10,21 @@ const route = useRoute();
       <li>
         <NuxtLink
           to="/"
-          :class="route.name === 'index' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499'"
+          :class="route.name === 'index' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'"
           >Home</NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           to="/events"
-          :class="route.name === 'events' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499'"
+          :class="route.name === 'events' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'"
           >Events</NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           to="/contact"
-          :class="route.name === 'contact' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499'"
+          :class="route.name === 'contact' ? 'text-blue-499' : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'"
           >Contact</NuxtLink
         >
       </li>

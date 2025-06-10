@@ -15,8 +15,8 @@
         <br />
         <p>Nelson // New Zealand</p>
         <br />
-        <p class="flex">
-          Instagram:&nbsp;
+        <div class="flex">
+          <p>Instagram:&nbsp;</p>
           <NuxtLink
             to="https://www.instagram.com/rorystockphoto/"
             target="_blank"
@@ -29,9 +29,9 @@
               @rorystockphoto
             </p>
           </NuxtLink>
-        </p>
-        <p class="flex">
-          Email:&nbsp;
+        </div>
+        <div class="flex">
+          <p>Email:&nbsp;</p>
           <NuxtLink
             to="mailto:contact@rorystock.com"
             target="_blank"
@@ -44,7 +44,7 @@
               contact@rorystock.com
             </p>
           </NuxtLink>
-        </p>
+        </div>
         <br />
         <DigitalTime />
       </div>
