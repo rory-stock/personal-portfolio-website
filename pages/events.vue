@@ -97,17 +97,17 @@ const events = [
           class="w-full items-baseline flex flex-row justify-center xl:justify-between"
         >
           <p
-            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black"
+            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black transition-colors duration-100"
           >
             {{ event.date }}
           </p>
           <p
-            class="sm:text-xl md:text-2xl font-bold text-blue-499 xl:text-black xl:group-hover:text-blue-499"
+            class="sm:text-xl md:text-2xl font-bold text-blue-499 xl:text-black xl:group-hover:text-blue-499 transition-colors duration-100"
           >
             {{ event.title }}
           </p>
           <p
-            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black"
+            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black transition-colors duration-100"
           >
             {{ event.location }}
           </p>
