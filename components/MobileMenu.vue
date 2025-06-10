@@ -36,11 +36,11 @@ const route = useRoute();
           >
           <!------------------------------------------------------->
           <!------------------- EVENTS PAGE ------------------->
-          <NuxtLink
-            to="/events"
-            :class="route.name === 'events' ? 'text-blue-499' : 'text-white'"
-            >Events</NuxtLink
-          >
+<!--          <NuxtLink-->
+<!--            to="/events"-->
+<!--            :class="route.name === 'events' ? 'text-blue-499' : 'text-white'"-->
+<!--            >Events</NuxtLink-->
+<!--          >-->
           <!------------------------------------------------------->
           <!------------------- CONTACT PAGE ------------------->
           <NuxtLink

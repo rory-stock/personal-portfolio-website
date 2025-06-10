@@ -34,17 +34,17 @@ const route = useRoute();
       </li>
       <!---------------------------------------------------->
       <!------------------- EVENTS PAGE ------------------->
-      <li>
-        <NuxtLink
-          to="/events"
-          :class="
-            route.name === 'events'
-              ? 'text-blue-499'
-              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'
-          "
-          >Events</NuxtLink
-        >
-      </li>
+<!--      <li>-->
+<!--        <NuxtLink-->
+<!--          to="/events"-->
+<!--          :class="-->
+<!--            route.name === 'events'-->
+<!--              ? 'text-blue-499'-->
+<!--              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'-->
+<!--          "-->
+<!--          >Events</NuxtLink-->
+<!--        >-->
+<!--      </li>-->
       <!---------------------------------------------------->
       <!------------------- CONTACT PAGE ------------------->
       <li>
