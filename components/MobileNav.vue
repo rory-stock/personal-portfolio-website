@@ -10,6 +10,7 @@ watch(
   },
 );
 
+//--------- STOP SCROLLING BODY WHEN MENU IS OPEN ---------//
 onNuxtReady(() => {
   watchEffect(() => {
     if (isOpen.value) {
@@ -19,6 +20,7 @@ onNuxtReady(() => {
     }
   });
 });
+//-------------------------------------------------------//
 </script>
 
 <template>

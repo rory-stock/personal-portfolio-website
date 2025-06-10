@@ -3,6 +3,7 @@
 <template>
   <header>
     <div class="flex flex-col gap-1 md:gap-2">
+      <!-------------------- B&W GRADIENT BAR -------------------->
       <div class="flex flex-row">
         <span class="bg-white w-1/12 h-5 md:h-8"></span>
         <span class="bg-gray-50 w-1/12 h-5 md:h-8"></span>
@@ -17,6 +18,7 @@
         <span class="bg-gray-900 w-1/12 h-5 md:h-8"></span>
         <span class="bg-black w-1/12 h-5 md:h-8"></span>
       </div>
+      <!---------------------------------------------------------->
 
       <div
         class="flex flex-row items-center align-middle pb-1 md:pb-0 justify-between select-none"
