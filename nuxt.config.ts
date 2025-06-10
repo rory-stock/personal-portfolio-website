@@ -1,15 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  css: ['~/assets/css/main.css'],
+  vite: { plugins: [tailwindcss()] },
 
   image: {
     provider: "imgix",
@@ -26,9 +22,7 @@ export default defineNuxtConfig({
   sitemap: {
     autoLastmod: true,
     xslTips: false,
-    xslColumns: [
-      { label: "URL", width: "50%" },
-    ],
+    xslColumns: [{ label: "URL", width: "50%" }],
   },
 
   app: {
