@@ -151,7 +151,7 @@ const events = [
           <NuxtPicture
             :src="event.coverImage"
             :alt="event.title"
-            class="w-full h-96 object-cover"
+            class="w-full h-96 object-cover group-hover:opacity-80 group-hover:brightness-110 transition-all duration-300"
             decoding="async"
             :modifiers="{ auto: 'format,compress' }"
           />
