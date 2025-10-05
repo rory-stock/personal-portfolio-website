@@ -4,7 +4,16 @@ useHead({
 });
 
 const events = [
-  //--------------- NZ MTB RALLY 2025 ---------------//
+  //----------- 2025 School MTB Championships -----------//
+  {
+    title: "2025 School MTB Championships",
+    location: "Nelson",
+    date: "September 29 - October 2",
+    url: "https://rorystock.pixieset.com/folder/t8qaKz2XDzOE/",
+    coverImage: "/events/R5RS8771.jpg",
+  },
+  //-----------------------------------------------------//
+  //--------------- 2025 NZ MTB RALLY ---------------//
   {
     title: "2025 NZ MTB Rally",
     location: "Nelson and Tasman",
