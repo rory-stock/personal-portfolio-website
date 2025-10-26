@@ -28,13 +28,6 @@ const route = useRoute();
             >Home</NuxtLink
           >
           <!------------------------------------------------------->
-          <!------------------- PROJECTS PAGE ------------------->
-<!--          <NuxtLink-->
-<!--            to="/projects"-->
-<!--            :class="route.name === 'projects' ? 'text-blue-499' : 'text-white'"-->
-<!--            >Projects</NuxtLink-->
-<!--          >-->
-          <!------------------------------------------------------->
           <!------------------- EVENTS PAGE ------------------->
           <NuxtLink
             to="/events"

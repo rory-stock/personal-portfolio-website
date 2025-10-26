@@ -20,19 +20,6 @@ const route = useRoute();
         >
       </li>
       <!---------------------------------------------------->
-      <!------------------- PROJECTS PAGE ------------------->
-<!--      <li>-->
-<!--        <NuxtLink-->
-<!--          to="/projects"-->
-<!--          :class="-->
-<!--            route.name === 'projects'-->
-<!--              ? 'text-blue-499'-->
-<!--              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'-->
-<!--          "-->
-<!--          >Projects</NuxtLink-->
-<!--        >-->
-<!--      </li>-->
-      <!---------------------------------------------------->
       <!------------------- EVENTS PAGE ------------------->
       <li>
         <NuxtLink
