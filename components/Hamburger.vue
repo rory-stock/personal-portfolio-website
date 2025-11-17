@@ -5,24 +5,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-11 content-center flex flex-col gap-1 cursor-pointer">
+  <div class="flex w-13 cursor-pointer flex-col content-center gap-1">
     <div
-      class="w-full h-1 bg-black block"
-      :class="
-        isOpen
-          ? 'transition ease-in-out transform duration-300 rotate-45 translate-y-1'
-          : ' transition ease-in-out transform duration-300'
-      "
+      class="block h-1 w-full transform bg-black transition duration-300 ease-in-out"
+      :class="isOpen && 'translate-y-1 scale-x-80 rotate-45'"
     ></div>
     <div
-      class="w-full h-1 bg-black block"
-      :class="
-        isOpen
-          ? 'transition ease-in-out transform duration-300 -rotate-45 -translate-y-1'
-          : ' transition ease-in-out transform duration-300'
-      "
+      class="block h-1 w-full transform bg-black transition duration-300 ease-in-out"
+      :class="isOpen && '-translate-y-1 scale-x-80 -rotate-45'"
     ></div>
   </div>
 </template>
-
-<style scoped></style>

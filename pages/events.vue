@@ -110,10 +110,18 @@ const events = [
   <div>
     <!------------------------- USAGE MESSAGE ------------------------->
     <p
-      class="flex justify-center font-georgia text-gray-500 selection:text-blue-499 text-base md:text-lg lg:text-xl pl-4 pr-4 pt-4"
+      class="flex justify-center font-ghost text-gray-500 selection:text-blue-499 md:text-lg lg:text-xl pl-4 pr-4 pt-4"
     >
-      Photos free for personal use with credit. Contact me for any brand or
-      commercial use.
+      Photos free for personal use with credit.&nbsp;
+      <span
+        ><NuxtLink
+          to="mailto:hello@rorystock.com"
+          target="_blank"
+          class="underline hover:text-blue-499 transition-colors duration-200"
+          >Contact me</NuxtLink
+        ></span
+      >
+      &nbsp;for any brand or commercial use.
     </p>
     <!-------------------------------------------------------------------->
     <div
@@ -130,21 +138,21 @@ const events = [
         >
           <!---------------------- EVENT DATE ----------------->
           <p
-            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black transition-colors duration-100"
+            class="hidden xl:flex md:text-lg text-blue-499 font-ghost group-hover:text-black transition-colors duration-100"
           >
             {{ event.date }}
           </p>
           <!---------------------------------------------------->
           <!---------------------- EVENT TITLE ----------------->
           <p
-            class="sm:text-xl md:text-2xl font-bold text-blue-499 xl:text-black xl:group-hover:text-blue-499 transition-colors duration-100"
+            class="sm:text-xl md:text-2xl font-medium text-blue-499 xl:text-black xl:group-hover:text-blue-499 transition-colors duration-100"
           >
             {{ event.title }}
           </p>
           <!------------------------------------------------------->
           <!---------------------- EVENT LOCATION ----------------->
           <p
-            class="hidden xl:flex md:text-lg text-blue-499 font-bold group-hover:text-black transition-colors duration-100"
+            class="hidden xl:flex md:text-lg text-blue-499 font-ghost group-hover:text-black transition-colors duration-100"
           >
             {{ event.location }}
           </p>

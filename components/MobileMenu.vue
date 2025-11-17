@@ -3,49 +3,42 @@ defineProps({
   isOpen: Boolean,
 });
 const route = useRoute();
+const publicNavItems = [
+  { name: 'index', label: 'Overview', to: '/' },
+  { name: 'events', label: 'Events', to: '/events' },
+  { name: 'contact', label: 'Contact', to: '/contact' },
+];
 </script>
 
 <template>
   <div class="md:hidden">
-    <Teleport to="#teleports">
-      <div
-        class="md:hidden absolute top-[4.7rem] w-full bg-black"
-        :class="
-          isOpen
-            ? 'block transition-all ease-in-out duration-500 h-full'
-            : 'transition-all ease-in-out duration-500 h-0'
-        "
-      >
-        <!--------------------- MOBILE MENU --------------------->
+    <ClientOnly>
+      <Teleport to="#mobile-menu-teleport">
         <div
-          class="gap-4 items-center justify-center text-3xl font-bold h-full"
-          :class="isOpen ? 'animate-menu-item-fade flex flex-col' : 'hidden'"
+          class="absolute z-50 w-full bg-black transition-all duration-500 ease-in-out md:hidden"
+          :class="isOpen ? 'block h-screen' : 'h-0'"
         >
-          <!--------------------- HOME PAGE --------------------->
-          <NuxtLink
-            to="/"
-            :class="route.name === 'index' ? 'text-blue-499' : 'text-white'"
-            >Home</NuxtLink
+          <!--------------------- MOBILE MENU --------------------->
+          <div
+            class="h-full items-center justify-center gap-4 text-3xl text-white"
+            :class="isOpen ? 'flex animate-menu-item-fade flex-col' : 'hidden'"
           >
-          <!------------------------------------------------------->
-          <!------------------- EVENTS PAGE ------------------->
-          <NuxtLink
-            to="/events"
-            :class="route.name === 'events' ? 'text-blue-499' : 'text-white'"
-            >Events</NuxtLink
-          >
-          <!------------------------------------------------------->
-          <!------------------- CONTACT PAGE ------------------->
-          <NuxtLink
-            to="/contact"
-            :class="route.name === 'contact' ? 'text-blue-499' : 'text-white'"
-            >Contact</NuxtLink
-          >
-          <!------------------------------------------------------->
+            <NuxtLink
+              v-for="link in publicNavItems"
+              :key="link.name"
+              :to="link.to"
+              :class="
+                route.name === link.name
+                  ? 'font-ghost-italic italic'
+                  : 'font-ghost'
+              "
+            >
+              {{ link.label }}
+            </NuxtLink>
+            <!------------------------------------------------------->
+          </div>
         </div>
-      </div>
-    </Teleport>
+      </Teleport>
+    </ClientOnly>
   </div>
 </template>
-
-<style scoped></style>

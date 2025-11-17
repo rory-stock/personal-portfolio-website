@@ -1,53 +1,29 @@
 <script setup lang="ts">
 const route = useRoute();
+
+const publicNavItems = [
+  { name: 'index', label: 'Overview', to: '/' },
+  { name: 'events', label: 'Events', to: '/events' },
+  { name: 'contact', label: 'Contact', to: '/contact' },
+]
+
+const getLinkClass = (name: string) => {
+  return route.name === name
+    ? "font-ghost-italic italic"
+    : "font-ghost hover:font-ghost-italic hover:italic";
+};
 </script>
 
 <template>
   <nav>
     <ul
-      class="hidden md:inline-flex gap-4 font-neue-haas-grotesk-text font-semibold md:text-xl lg:text-2xl items-center pr-6"
+      class="hidden items-center gap-4 pt-1 pr-6 text-black md:inline-flex md:text-xl lg:text-3xl"
     >
-      <!------------------- HOME PAGE ------------------->
-      <li>
-        <NuxtLink
-          to="/"
-          :class="
-            route.name === 'index'
-              ? 'text-blue-499'
-              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'
-          "
-          >Home</NuxtLink
-        >
+      <li v-for="link in publicNavItems" :key="link.name">
+        <NuxtLink :to="link.to" :class="getLinkClass(link.name)">
+          {{ link.label }}
+        </NuxtLink>
       </li>
-      <!---------------------------------------------------->
-      <!------------------- EVENTS PAGE ------------------->
-      <li>
-        <NuxtLink
-          to="/events"
-          :class="
-            route.name === 'events'
-              ? 'text-blue-499'
-              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'
-          "
-          >Events</NuxtLink
-        >
-      </li>
-      <!---------------------------------------------------->
-      <!------------------- CONTACT PAGE ------------------->
-      <li>
-        <NuxtLink
-          to="/contact"
-          :class="
-            route.name === 'contact'
-              ? 'text-blue-499'
-              : 'text-gray-500 hover:text-blue-499 transition-colors duration-100'
-          "
-          >Contact</NuxtLink
-        >
-      </li>
-      <!---------------------------------------------------->
     </ul>
   </nav>
 </template>
-
-<style scoped></style>

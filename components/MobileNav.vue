@@ -1,35 +1,26 @@
 <script setup lang="ts">
 const isOpen = ref(false);
-
 const route = useRoute();
 
 watch(
   () => route.path,
   () => {
     isOpen.value = false;
-  },
+  }
 );
 
 //--------- STOP SCROLLING BODY WHEN MENU IS OPEN ---------//
-onNuxtReady(() => {
-  watchEffect(() => {
-    if (isOpen.value) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  });
+watch(isOpen, (open) => {
+  document.body.style.overflow = open ? "hidden" : "auto";
 });
 //-------------------------------------------------------//
 </script>
 
 <template>
   <div class="md:hidden">
-    <div @click="isOpen = !isOpen" class="absolute top-10 right-8">
+    <div @click="isOpen = !isOpen" class="pr-3">
       <Hamburger :isOpen="isOpen" />
     </div>
     <MobileMenu :isOpen="isOpen" />
   </div>
 </template>
-
-<style scoped></style>

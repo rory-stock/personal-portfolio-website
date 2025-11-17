@@ -15,13 +15,6 @@ useHead({
       ? `Rory Stock - ${title}`
       : "Rory Stock - New Zealand Based Photographer";
   },
-  bodyAttrs: {
-    class: "bg-white",
-  },
-  htmlAttrs: {
-    class: "bg-black",
-    lang: "en",
-  },
 });
 </script>
 

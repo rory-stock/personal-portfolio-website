@@ -1,62 +1,57 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import DigitalClock from "~/components/DigitalClock.vue";
+</script>
 
 <template>
-  <footer>
-    <!------------------- SCROLLING TEXT ------------------->
-    <div class="bg-black overflow-x-hidden">
-      <ScrollingText
-        text="Rory Stock ● New Zealand Based Photographer"
-        :length="6"
-      />
-      <!---------------------------------------------------->
-
-      <!------------------- PERSONAL/CONTACT INFO ------------------->
-      <div
-        class="text-white text-sm md:text-lg font-semibold font-neue-haas-grotesk-text uppercase pl-3 md:pl-5 pt-5 pb-5 selection:bg-none selection:text-blue-499"
-      >
-        <p>© Rory Stock 2024 // 2025</p>
-        <br />
-        <p>Nelson // New Zealand</p>
-        <br />
-        <!----------------- INSTAGRAM ----------------->
-        <div class="flex">
-          <p>Instagram:&nbsp;</p>
-          <NuxtLink
-            to="https://www.instagram.com/rorystockphoto/"
-            target="_blank"
-            aria-label="Instagram profile link"
-            aria-hidden="false"
-          >
-            <p
-              class="text-white font-bold lowercase underline hover:text-blue-499 transition-colors duration-100"
-            >
-              @rorystockphoto
-            </p>
-          </NuxtLink>
-        </div>
-        <!----------------------------------------->
+  <footer class="bg-black">
+    <!------------------- PERSONAL/CONTACT INFO ------------------->
+    <div
+      class="px-2 pt-5 pb-5 font-geist text-xs text-white selection:bg-white selection:text-black md:px-5 md:text-base"
+    >
+      <div class="flex justify-between">
         <!----------------- EMAIL ----------------->
         <div class="flex">
           <p>Email:&nbsp;</p>
           <NuxtLink
-            to="mailto:contact@rorystock.com"
+            to="mailto:hello@rorystock.com"
             target="_blank"
             aria-label="Email link"
-            aria-hidden="false"
-          >
-            <p
-              class="text-white font-bold lowercase underline hover:text-blue-499 transition-colors duration-100"
-            >
-              contact@rorystock.com
-            </p>
+            class="lowercase underline transition-all duration-200 hover:brightness-125 hover:text-blue-499"
+          >hello@rorystock.com
           </NuxtLink>
         </div>
         <!----------------------------------------->
-        <br />
-        <DigitalTime />
+        <p>Nelson / New Zealand</p>
       </div>
+
+      <div class="flex justify-between">
+        <!----------------- INSTAGRAM ----------------->
+        <div class="flex">
+          <p>Instagram:&nbsp;</p>
+          <NuxtLink
+            :to="`https://www.instagram.com/rorystockphoto/`"
+            target="_blank"
+            aria-label="Instagram profile link"
+            class="lowercase underline transition-all duration-200 hover:brightness-125 hover:text-blue-499"
+          >
+            @rorystockphoto
+          </NuxtLink>
+        </div>
+        <!----------------------------------------->
+
+        <!---------------- DIGITAL CLOCK ------------------>
+        <div class="flex">
+          <p>Local Time /&nbsp;</p>
+          <DigitalClock />
+        </div>
+        <!-------------------------------------------------->
+      </div>
+
+      <!---------------- Copyright ------------------>
+      <div class="mt-7 flex justify-between">
+        <p>&copy; 2024 / 2025 Rory Stock</p>
+      </div>
+      <!--------------------------------------------->
     </div>
   </footer>
 </template>
-
-<style scoped></style>

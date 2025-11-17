@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@utility no-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 @theme {
   /*  CUSTOM ANIMATIONS */
   --animate-scroll-right-to-left: scroll-right-to-left 25s linear infinite;
@@ -13,6 +21,14 @@
   --font-neue-haas-grotesk-text: neue-haas-grotesk-text, sans-serif;
   --font-georgia: Georgia, serif;
   --font-avant-garde: itc-avant-garde-gothic-pro, sans-serif;
+
+  --font-geist: Geist, sans-serif;
+
+  --font-neue-montreal-medium-semi: "Neue Montreal Medium Semi", sans-serif;
+  --font-neue-montreal-medium-bold: "Neue Montreal Medium Bold", sans-serif;
+
+  --font-ghost: "Ghost", serif;
+  --font-ghost-italic: "Ghost Italic", serif;
   /*  ************************************************** */
 
   /*  CUSTOM COLORS */
@@ -46,3 +62,49 @@
   }
   /*  ************************************************** */
 }
+
+/********************************************************/
+@layer base {
+    html,
+    body,
+    div {
+        @apply no-scrollbar;
+    }
+    html {
+        @apply bg-black;
+    }
+    body {
+        @apply bg-white;
+    }
+
+    @font-face {
+        font-family: "Neue Montreal Medium Bold";
+        src: url("/fonts/neue-montreal-squeezed-700.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Neue Montreal Medium Semi";
+        src: url("/fonts/neue-montreal-semi-squeezed-530.woff2") format("woff2");
+        font-weight: 530;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Ghost";
+        src: url("/fonts/ghost.woff2") format("woff2");
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Ghost Italic";
+        src: url("/fonts/ghost-italic.woff2") format("woff2");
+        font-style: italic;
+        font-display: swap;
+    }
+}
+/********************************************************/
