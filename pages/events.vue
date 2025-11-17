@@ -109,20 +109,22 @@ const events = [
 <template>
   <div>
     <!------------------------- USAGE MESSAGE ------------------------->
-    <p
+    <div
       class="flex justify-center font-ghost text-gray-500 selection:text-blue-499 md:text-lg lg:text-xl pl-4 pr-4 pt-4"
     >
-      Photos free for personal use with credit.&nbsp;
-      <span
-        ><NuxtLink
-          to="mailto:hello@rorystock.com"
-          target="_blank"
-          class="underline hover:text-blue-499 transition-colors duration-200"
-          >Contact me</NuxtLink
-        ></span
-      >
-      &nbsp;for any brand or commercial use.
-    </p>
+      <p>
+        Photos free for personal use with credit.&nbsp;
+        <span
+          ><NuxtLink
+            to="mailto:hello@rorystock.com"
+            target="_blank"
+            class="underline hover:text-blue-499 transition-colors duration-200"
+            >Contact me</NuxtLink
+          ></span
+        >
+        &nbsp;for any brand or commercial use.
+      </p>
+    </div>
     <!-------------------------------------------------------------------->
     <div
       class="flex flex-col gap-4 items-center md:items md:grid md:grid-cols-2 md:gap-6 pl-4 pr-4 pt-4 pb-4"
