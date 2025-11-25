@@ -50,13 +50,13 @@ const events = [
   },
   //--------------------------------------------------------//
   //--------------- 2024 CODGERS KIDS ENDURO ---------------//
-  {
-    title: "2024 Codgers Kids Enduro",
-    location: "Koata Park",
-    date: "October 19",
-    url: "https://drive.google.com/drive/folders/1sGzvAzK25DWmg07eiC4aQigIrnu0jgMn",
-    coverImage: "/events/R5RS2243.jpg",
-  },
+  // {
+  //   title: "2024 Codgers Kids Enduro",
+  //   location: "Koata Park",
+  //   date: "October 19",
+  //   url: "https://drive.google.com/drive/folders/1sGzvAzK25DWmg07eiC4aQigIrnu0jgMn",
+  //   coverImage: "/events/R5RS2243.jpg",
+  // },
   //--------------------------------------------------//
   //--------------- 2024 BROKEN AXE DH ---------------//
   {
