@@ -4,6 +4,15 @@ useHead({
 });
 
 const events = [
+  //--------------- 2026 Cable Bay Enduro ---------------//
+  {
+    title: "2026 Cable Bay Enduro",
+    location: "Cable Bay Adventure Park",
+    date: "March 6 - 7",
+    url: "https://drive.google.com/drive/folders/1gNw9TYrEHM2q65WKmR7NULtur3S0r_LM?usp=sharing",
+    coverImage: "/events/R5RS8794.jpg",
+  },
+  //-----------------------------------------------------//
   //----------- 2025 School MTB Championships -----------//
   {
     title: "2025 School MTB Championships",
