@@ -49,7 +49,7 @@ import DigitalClock from "~/components/DigitalClock.vue";
 
       <!---------------- Copyright ------------------>
       <div class="mt-7 flex justify-between">
-        <p>&copy; 2024 / 2025 Rory Stock</p>
+        <p>&copy; 2024 / 2026 Rory Stock</p>
       </div>
       <!--------------------------------------------->
     </div>
